@@ -1,0 +1,23 @@
+.blueColor{
+    color:lightblue;
+    font-family: arial;
+    font-size: larger;
+}
+
+span.blueColor{
+     color:lightblue;
+    font-family: arial;
+    font-size: larger;
+}
+
+#specificColor{
+    color:brown;
+    font-family:verdana;
+    font-size:medium;
+}
+
+#specificLink{
+    color:cornflowerblue;
+    font-family: Helvetica;
+    font-size:large;
+}
