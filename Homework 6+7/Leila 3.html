@@ -1,5 +1,37 @@
 <html>
-    
+    <script>
+function checkboxes()
+{
+var firstName = document.getElementById("firstName").value;
+if(firstName == "")
+{
+    document.getElementById("firstName").style.backgroundColor = "red";
+    document.getElementById("firstName").focus();
+}
+var lastName = document.getElementById("lastName").value;
+if(lastName == "")
+{
+document.getElementById("lastName").style.backgroundColor = "red";
+    document.getElementById("lastName").focus();
+}
+var email = document.getElementById("email").value;
+if(email == "")
+{
+ document.getElementById("email").style.backgroundColor = "red";
+    document.getElementById("email").focus();
+}
+var radio = document.getElementById("agree");
+if(radio.checked == false)
+{
+    radio.style.backgroundColor = "red";
+    radio.focus();
+}
+
+
+}
+
+
+    </script>
     <head>
     <title>Contact Us</title>
      <link rel="stylesheet" type="text/css" href="mainstyle.css">
@@ -7,8 +39,8 @@
 <body>
     <h1>Contact Information</h1>
         <form action="Leila 3.html" type="post">
-        <span id="specificColor">First Name: </span> <input type="text" id="fname"><br>
-        Last Name: <input type="text" id="lname"><br>
+        <span id="specificColor">First Name: </span> <input type="text" id="firstName"><br>
+        Last Name: <input type="text" id="lastName"><br>
        <p>
 
        </p>
@@ -17,6 +49,7 @@
 
        </p>
        <h2>Terms of Agreement</h2>
-       <input type="radio" name="agree" value="agreeyes">I agree<br>
-       <input type="radio" name="disagree" value="disagree">I do not agree<br>
+       <input type="radio" id="agree" name="agree" value="agreeyes">I agree<br>
+       <input type="radio" id="disagree" name="disagree" value="disagree">I do not agree<br>
+       <button id="btnSubmit" class="btn btn-primary" onclick='checkboxes();'>Submit</button>
 <a href="Leila .html">Go to first page</a>
